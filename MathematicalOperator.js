@@ -27,6 +27,28 @@ console.log(10 + "10" + 10);// "1010"+10=101010
 console.log(10 - "10" - 10);//10-10-10= -10
 console.log(10 + "10" -10);//"1010"-10=101010
 
+console.log(9/2);//4.5
+console.log(9.0 / 2);//4.5
+
+console.log(0 / 9);//0
+console.log(0 / 9.2);//0
+
+console.log(9/0);//Infinity
+console.log(9.2/0);//Infinity
+
+console.log(0/0);//NaN
+console.log(0.0/0);//NaN
+console.log(0/0.0);//NaN
+console.log(0.0/0.0);//NaN
+
+console.log("9"/2);//4.5
+console.log("9"/"2");//4.5
+
+console.log(9 % 2);//1
+console.log(8 % 2);//0
+console.log(100 % 3);//1
+
+console.log(-9/2);//-4.5
 
 //unary operator: +
 console.log(+"42" + 5);//42+5=47
