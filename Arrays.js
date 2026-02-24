@@ -62,8 +62,12 @@ console.log("-----------");
 let pro = Array.from('playwright');
 console.log(pro);
 
+let pr = Array.from('1234');
+console.log(pr);
 
-
+//from method will work only for strings.
+let pm = Array.from(1234);
+console.log(pm);
 
 
 
