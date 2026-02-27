@@ -1,6 +1,7 @@
 // collection of different or similar data in js
 // Array[]
 
+// 1D Array
 let num = [10,20,30,40]; //0-3; length=4
 
 console.log(num[-1]);//undefined

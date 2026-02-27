@@ -32,5 +32,11 @@ console.log(marks.indexOf(1))//0----1st occurance of 1
 
 console.log(marks.indexOf(1, marks.indexOf(1)+1));//4- 2nd occurance of 1
 
+let myfruits = ['apple', 'grapes', 'banana', 'apple', 'cherry', 'apple'];
+console.log(myfruits.indexOf('apple'));//0 1st occurance of apple
+console.log(myfruits.indexOf('apple', myfruits.indexOf('apple') + 1));//3 ---2nd occurance of apple
 
+let p = myfruits.indexOf('apple', myfruits.indexOf('apple') + 1);
+
+console.log(myfruits.indexOf('apple', p + 1));//5---3rd occurance of apple
 
