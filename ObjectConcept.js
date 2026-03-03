@@ -26,6 +26,7 @@ console.log(user['city']);//LA
 console.log(user.address.flat);//{ flat: 103, zip: 5454523, lat: 10.34, long: 11.22 }
 console.log(user.address.lat);//10.34
 console.log(user.address['zip']);//11.22
+console.log(user['address']['flat'])//103
 
 //Create a new Key- value pair Update Method
 user.email = 'tom@gmail.com';

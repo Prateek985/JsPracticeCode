@@ -17,6 +17,8 @@ console.log("-----------");
 //for...in loop: iterate the index
 for(let k in num){
     console.log(k + "=" + num[k]);
+    console.log(typeof k);//it will always give you string because the k is targeting the index based and indexes are stored in string format.
+    //we can use these for in loop for object iterations.  
 }
 
 console.log("-----------");
@@ -34,3 +36,5 @@ console.log("-----------");
 for(let i = empData.length - 1; i >= 0 ; i--){
     console.log(empData[i]);
 }
+
+
