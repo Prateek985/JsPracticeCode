@@ -23,7 +23,11 @@ let user = {
 for(let key in user){
     //console.log(key);
     //console.log(user[key]);
-    console.log(key, ':' , user[key]);
+    //console.log(key, ':' , user[key]);
+    if(key === 'address'){
+        console.log(user[key]['flat']);
+        break;
+    }
 }
 
 console.log(user.devices.length);
