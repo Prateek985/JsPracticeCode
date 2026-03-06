@@ -4,6 +4,8 @@ function test(){ // 0 input
     //no output: no return keyword----void
 }
 
+console.log(typeof test);
+
 //call function:
 test();
 
@@ -45,4 +47,85 @@ console.log(res);
 
 let c = add(10, 'prateek');
 console.log(c);
+//call by value
+
+console.log('----------------------');
+//AC: create a function.
+//which will calculate the student marks...range: 1 to 100
+//input param: studentName(string)
+//return: marks of the student (number)
+//if student name is not found... print student name is not found and return -1.
+
+/**
+ * 
+ * @param {string} studentName 
+ * @returns this functions return the studnet marks
+ */
+function getStudentMarks(studentName){
+    console.log('getting marks of student' + studentName);
+    if(studentName === 'ravi'){
+        return 90;
+    }
+    if(studentName === 'uday'){
+        return 80;
+    }
+    if(studentName === 'ankit'){
+        return 100;
+    }
+    else{
+        console.log(`${studentName} is not found`);
+        return -1;
+    }
+};
+
+let m1 = getStudentMarks('ravi');
+console.log(m1);
+
+console.log('======================');
+
+/**
+ * 
+ * @param {string} studentName 
+ */
+function getmarks(studentName){
+    console.log('getting marks of student' + studentName);
+    
+    switch (studentName.trim().toLowerCase()) {
+        case 'ravi':
+            return 90;
+        case 'pooja':
+            return 80;
+        case 'uday':
+            return 100;     
+        default:
+            console.log(`${studentName} is not found`);
+            return -1;
+    }
+}
+
+let m2 = getmarks(studentName);
+console.log(m2);
+
+console.log('======================');
+
+/**
+ * 
+ * @param {number} productPrice 
+ * @param {number} tax 
+ * @param {number} latefee 
+ * @param {number} gst 
+ * @returns 
+ */
+function getTotalBilling(productPrice, tax, latefee, gst){
+      console.log('calculate the final billing....');
+      return productPrice + tax + latefee; 
+};
+
+let amt = getTotalBilling(1000, 10, 20, 5);
+console.log(amt);
+
+console.log(typeof getTotalBilling);
+console.log(getTotalBilling.name);
+console.log(getTotalBilling.length);
+
 
