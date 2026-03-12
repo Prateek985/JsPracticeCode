@@ -1,0 +1,22 @@
+//IIFE function: Immediate Invoke function Expression
+// This function has no name: Anonymous function
+
+(function (browsername){
+   console.log('hello world');
+   console.log(10+20);
+   console.log(browsername)
+
+   //read test data from csv/excel
+   //DB connection code
+   //start the server
+})('chrome');
+
+
+(function (browsername){
+   console.log('hello world');
+})();
+
+
+(function (browsername){
+   console.log('buyy...');
+})();
