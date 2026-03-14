@@ -61,3 +61,9 @@ function endurl(browsername, url, callback){
 
 enterurl('chrome', 'https://www.google.com', initDriver);
 
+console.log('==============');
+
+
+
+
+

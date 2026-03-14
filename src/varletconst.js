@@ -26,6 +26,7 @@ console.log(t);
 let p = 10;
 console.log(p);
 
+
 let a;
 console.log(a);
 
