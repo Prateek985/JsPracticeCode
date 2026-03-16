@@ -10,15 +10,15 @@ console.log(Number.MIN_SAFE_INTEGER);
 console.log(Number.MAX_SAFE_INTEGER);
 
 let i = 10;
-console.log(i);
-console.log(typeof i);
+console.log(i);//10
+console.log(typeof i);//number
 
 let j = 12.33;
-console.log(j);
-console.log(typeof j);
+console.log(j);//12.33
+console.log(typeof j);//number
 
 const PI = 3.14;
-console.log(typeof PI);
+console.log(typeof PI);//number
 
 //1 byte = 8 bits;
 //size: 8 bytes = 64 bits
@@ -30,17 +30,17 @@ let gender = 'm';
 let isEx = 'y';
 let ph = '9074788900';
 
-console.log(firstName);
-console.log(typeof firstName);
-console.log(typeof gender);
-console.log(typeof ph);
+console.log(firstName);//prateek
+console.log(typeof firstName);//string
+console.log(typeof gender);//string
+console.log(typeof ph);//string
 
 let productName = 'Macbook Pro';
-console.log(productName);
+console.log(productName);//macbook pro
 
 //size: 2 bytes per character
 let e = 'abc'; // 3*2=6 bytes
-console.log('my first name is ' + firstName);
+console.log('my first name is ' + firstName);//prateek
 
 //3. Boolean: true/false
 const flag = true;
@@ -68,7 +68,7 @@ console.log(typeof te);// bigInt
 
 let x = 10n; //bigInt
 let y = 20n; //bigInt
-//console.log(x+y);// Can not mix BigInt and other type
+//console.log(x+y);// Can not mix BigInt and other data type
 console.log(x+y);//30n
 
 let pop = BigInt(100);
