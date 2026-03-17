@@ -41,4 +41,12 @@ let empAddress = ["500", "Rainbow apts", "Pune", "India"];
 let actAddress = empAddress.reduce((address, words) => address + words + " ", " ");
 console.log(actAddress);
 
+//chain all the methods.
+//number array: even ---> square then --> sum
 
+let mynumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let finalsum = mynumber.filter(e => e % 2 === 0)
+                     .map(e => e*e)
+                         .reduce((sum,n) => sum + n, 0);
+console.log(finalsum);
