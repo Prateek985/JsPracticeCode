@@ -56,6 +56,14 @@ function pourCoffee(callback){
     }, 2000);
 };
 
+function stopMachine(callback){
+    setTimeout(()=>{
+        console.log('Stoping the Machine now.....');
+        callback();
+    }, 4000);
+};
+
+//calling the functions:
 startMachine(()=>{
     grindBeans(()=>{
         boilWater(()=>{
@@ -67,3 +75,42 @@ startMachine(()=>{
         })
     })
 })
+
+// async function makecoffee(){
+//     await grindBeans();
+//     await boilWater();
+//     await brewCoffee();
+// }
+
+//2. we want to start the machine and stop the machine
+startMachine(()=>{
+    stopMachine(()=>{
+
+    })
+});
+
+
+//3. we want to start the machine, boli the water and stop the machine
+startMachine(()=>{
+    boilWater(()=>{
+    stopMachine(()=>{
+
+     })
+  })
+});
+
+//promise
+//Async await
+
+function startprinter(mycallback){
+    setTimeout(()=>{
+        console.log("hi");
+    }, 5000)
+    mycallback();
+};
+
+function printIt(){
+    console.log('buy');
+}
+
+startprinter(printIt);
